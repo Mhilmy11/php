@@ -6,5 +6,6 @@ $password=$_REQUEST['password'];
 if ($email == 'asdfg@gmail.com' && $password == 'dombagarut') {
     header('Location: ./loginresult.html');
 }
-
-header('Location: ./errorresult.html');
+else {
+    header('Location: ./errorresult.html');
+}

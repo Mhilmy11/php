@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projek.css">
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="in-modal">
+            <div class="head-log">
+                <h1>Login</h1>
+                <p>! Beware the Pishing !</p>
+            </div>
+            <form class="login" action="">
+                <div class="inlog">
+                    <label>Email :</label>
+                    <input class="inlog-1" type="email">
+                </div>
+                <div class="inlog">
+                    <label>Password :</label>
+                    <input class="inlog-1" type="password">
+                </div>
+            </form>
+            <div class="foot-log">
+                <h4>Create New account?</h4>
+                <button onclick="sign()">SignUp</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modals" class="modal">
+        <div class="in-modal">
+            <div class="head-log">
+                <h1>SignUp</h1>
+                <p>Create your own RRQ account</p>
+            </div>
+            <form class="login" action="">
+                <div class="inlog">
+                    <label>NickName :</label>
+                    <input class="inlog-1" type="text">
+                </div>
+                <div class="inlog">
+                    <label>Email :</label>
+                    <input class="inlog-1" type="email">
+                </div>
+                <div class="inlog">
+                    <label>Password :</label>
+                    <input class="inlog-1" type="password">
+                </div>
+                <div class="inlog">
+                    <label>Re-enter Password :</label>
+                    <input class="inlog-1" type="password">
+                </div>
+            </form>
+            <div class="foot-log">
+                <button>Done</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header">
+                <img height="100px" width="250px" src="/assets/rrq.png" alt="logorrq">
+                <div class="head">
+                    <a class="p-text" href="">Home</a>
+                    <a class="p-text" href="">Brand Ambasador</a>
+                    <a class="p-text" href="">Player</a>
+                    <a class="p-text" href="">Forum</a>
+                    <a class="p-text" href="">Broadcast</a>
+                </div>
+                <div class="head-1">
+                    <button onclick="login()" class="p-text-1">LogIn</button>
+                    <button onclick="signup()" class="p-text-1">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+<script>
+    var modal = document.getElementById("modal")
+    var modals = document.getElementById("modals")
+
+    function login(){
+        modal.style.display = "flex"
+    }
+
+    function signup(){
+        modals.style.display = "flex"
+    }
+
+    function sign(){
+        modals.style.display = "flex"
+    }
+</script>
+</html>
