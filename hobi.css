@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.back{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-hobi{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.iya, form{
+    background-color: grey;
+    width: 300px;
+    border-radius: 10px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+select{
+    margin-top: 10px;
+}
+
+.btn-1{
+    border: none;
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+}
+
+.padding{
+    margin-bottom: 10px;
+}
