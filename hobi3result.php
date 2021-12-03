@@ -1,38 +1,39 @@
 <?php
 
-$name=$_REQUEST["name"];
-$hobi1=$_REQUEST["hobi"];
+$name=$_REQUEST["name"]; 
+$hobi1=$_REQUEST["hobi"]; 
 $hobi2=$_REQUEST["hobi2"];
 $hobi3=$_REQUEST["hobi3"];
 
-function total($angka){
-    switch ($angka) {
+function total($harga){ 
+    switch ($harga) {
         case 'basket':
-            $harga+=1000;
+            $harga=1000;
             break;
         case 'bola':
-            $harga+=10000;
+            $harga=10000;
             break;
         case 'voli':
-            $harga+=12000;
+            $harga=12000;
             break;
         case 'billiard':
-            $harga+=15000;
+            $harga=15000;
             break;
         case 'mancing':
-            $harga+=16000;
+            $harga=16000;
             break;
         case 'coding':
-            $harga+=20000;
+            $harga=20000;
             break;
         case 'diving':
-            $harga+=150000;
+            $harga=150000;
             break;
     }
     return $harga;
+
 }
 
-$total = total($angka)
+$total = total($hobi1) + total($hobi2) + total($hobi3);
 
 ?>
 
@@ -66,7 +67,7 @@ $total = total($angka)
             <div class="padding garis"></div>
             <div class="padding">
                 <h4>Harga Total :</h4>
-                <div>Rp : <?php echo $total ?> </div>
+                <div>Rp : <?php echo $total?> </div>
             </div>
         </div>
     </div>
