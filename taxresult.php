@@ -4,8 +4,10 @@ $name=$_REQUEST["name"];
 $staff=$_REQUEST["staff"];
 $status=$_REQUEST["status"];
 $child=$_REQUEST["child"];
+$income=$_REQUEST["income"];
 
-$income_amount=$_REQUEST["income"];
+
+$income_amount = $income * 12;
 
 if ($status=="yes") {
     $income_amount += 1320000;

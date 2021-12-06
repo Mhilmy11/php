@@ -67,7 +67,7 @@ $total = total($hobi1) + total($hobi2) + total($hobi3);
             <div class="padding garis"></div>
             <div class="padding">
                 <h4>Harga Total :</h4>
-                <div>Rp : <?php echo $total?> </div>
+                <div>Rp : <?php echo $total ?> </div>
             </div>
         </div>
     </div>
