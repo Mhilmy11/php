@@ -90,3 +90,53 @@
     padding: 5px;
     border-radius: 5px;
 }
+
+.btn-1{
+    width: 100px;
+    height: 30px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-2{
+    width: 100px;
+    height: 30px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+}
+
+.for-btn{
+    justify-content: center;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.in-home{
+    background-color: black;
+    height: 100vh;
+
+}
+
+body{
+    background-color: #ffcc00;
+}
+
+p{
+    color: white;
+    width: 50%;
+}
+
+select{
+    border: none;
+    background: none;
+    color: white;
+    font-weight: bold;
+}
+
+option{
+    color: black;
+}

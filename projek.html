@@ -23,6 +23,9 @@
                     <label>Password :</label>
                     <input class="inlog-1" type="password">
                 </div>
+                <div class="for-btn">
+                    <button class="btn-1">Login</button>
+                </div>
             </form>
             <div class="foot-log">
                 <h4>Create New account?</h4>
@@ -56,7 +59,7 @@
                 </div>
             </form>
             <div class="foot-log">
-                <button>Done</button>
+                <button onclick="done()">Done</button>
             </div>
         </div>
     </div>
@@ -64,12 +67,14 @@
     <header>
         <div class="container">
             <div class="header">
-                <img height="100px" width="250px" src="/assets/rrq.png" alt="logorrq">
+                <a href="projek.html">
+                    <img height="100px" width="250px" src="/assets/rrq.png" alt="logorrq">
+                </a>
                 <div class="head">
-                    <a class="p-text" href="">Home</a>
-                    <a class="p-text" href="">Brand Ambasador</a>
+                    <a class="p-text" href="home.html">Home</a>
+                    <a class="p-text" href="brand.html">Brand Ambasador</a>
                     <a class="p-text" href="">Player</a>
-                    <a class="p-text" href="">Forum</a>
+                    <a class="p-text" href="build.html">Build</a>
                     <a class="p-text" href="">Broadcast</a>
                 </div>
                 <div class="head-1">
@@ -79,6 +84,11 @@
             </div>
         </div>
     </header>
+    <div class="container">
+        <div class="in-home">
+
+        </div>
+    </div>
 </body>
 
 <script>
@@ -95,6 +105,10 @@
 
     function sign(){
         modals.style.display = "flex"
+    }
+
+    function done(){
+        modals.style.display = "none"
     }
 </script>
 </html>
