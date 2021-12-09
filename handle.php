@@ -1,11 +1,29 @@
 <?php
-// var_dump($_REQUEST["nama"]);
+$servername = "localhost";
+$username = "root";
+$password = "";
 
-// $_REQUEST["nama"] = ["udin", "ara"];
 
-// $hahaha =["udin", "ara"];
+// Create connection
+$conn = mysqli_connect($servername, "root", $password, "tes");
 
-// $_REQUEST["nama"]["0"]
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+
+$datanama = $_REQUEST["nama"]; 
+
+
+
+for ($i=0; $i < count($datanama) ; $i++) {
+
+    $sql = "INSERT INTO name (nama) VALUES ('$datanama[$i]')"; // "INSERT INTO name (nama) VALUES ('rahul')"
+
+    mysqli_query($conn, $sql); // kein
+}
+
 
 ?>
 

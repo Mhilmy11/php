@@ -8,6 +8,62 @@
     <link rel="stylesheet" href="projek.css">
 </head>
 <body>
+    <div id="modal" class="modal">
+        <div class="in-modal">
+            <div class="head-log">
+                <h1>Login</h1>
+                <p>! Beware the Pishing !</p>
+            </div>
+            <form class="login" action="">
+                <div class="inlog">
+                    <label>Email :</label>
+                    <input class="inlog-1" type="email">
+                </div>
+                <div class="inlog">
+                    <label>Password :</label>
+                    <input class="inlog-1" type="password">
+                </div>
+                <div class="for-btn">
+                    <button class="btn-1">Login</button>
+                </div>
+            </form>
+            <div class="foot-log">
+                <h4>Create New account?</h4>
+                <button onclick="sign()">SignUp</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modals" class="modal">
+        <div class="in-modal">
+            <div class="head-log">
+                <h1>SignUp</h1>
+                <p>Create your own RRQ account</p>
+            </div>
+            <form class="login" action="">
+                <div class="inlog">
+                    <label>NickName :</label>
+                    <input class="inlog-1" type="text">
+                </div>
+                <div class="inlog">
+                    <label>Email :</label>
+                    <input class="inlog-1" type="email">
+                </div>
+                <div class="inlog">
+                    <label>Password :</label>
+                    <input class="inlog-1" type="password">
+                </div>
+                <div class="inlog">
+                    <label>Re-enter Password :</label>
+                    <input class="inlog-1" type="password">
+                </div>
+            </form>
+            <div class="foot-log">
+                <button onclick="done()">Done</button>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <div class="header">
@@ -34,4 +90,24 @@
         </div>
     </div>
 </body>
+<script>
+    var modal = document.getElementById("modal")
+    var modals = document.getElementById("modals")
+
+    function login(){
+        modal.style.display = "flex"
+    }
+
+    function signup(){
+        modals.style.display = "flex"
+    }
+
+    function sign(){
+        modals.style.display = "flex"
+    }
+
+    function done(){
+        modals.style.display = "none"
+    }
+</script>
 </html>
